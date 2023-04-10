@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Webpage</title>
+  <script>
+    function correct() {
+      document.getElementById('baby').innerHTML = 'YEAH ITS THE BABY';
+      document.getElementById('baby').style.backgroundColor = "green";
+      document.getElementById('baby').style.color = "black";
+    }
+
+    var insults = ['DO YOU REALIZE WE TOLERATE YOU', 'IF I COULD SMELL YOU I WOULDNT BE FRIENDS WITH YOU', 'YEAH NICE FREAKIN TRY YA CHACH', 'I WILL LITERALLY CRY RIGHT NOW'];
+
+    function incorrect1() {
+      document.getElementById('0').innerHTML = insults[1];
+    }
+
+    function incorrect2() {
+      document.getElementById('1').innerHTML = insults[0];
+    }
+
+    function incorrect3() {
+      document.getElementById('2').innerHTML = insults[2];
+    }
+
+    function incorrect4() {
+      document.getElementById('3').innerHTML = insults[3];
+    }
+  </script>
+</head>
+<body class="red">
+  <div class="center">
+    <h1>THESE ARE PICTURES OF ANGRY PEOPLE</h1>
+    <h4>EVERYTHING ON THIS WEBSITE IS GOING TO BE ANGRY</h4>
+  </div>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html">HOMEPAGE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="angrypeople.html">ANGRY PEOPLE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="angryanimals.html">ANGRY ANIMALS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login_gotcha.html">LOG IN</a>
+    </li>
+  </ul>
+
+  <hr style="height: 5px; margin-top: 0;">
+
+  <h2 class="center">WHO IS THE ANGRIEST? PICK ONE</h2>
+
+  <div class="center">
+
+    <div class="imgContainer">
+      <div>
+        <img src="pics/mad1.jfif" alt="...">
+      </div>
+      <div>
+        <button type="button" class="redtxt black" onclick="correct()" id="baby">THIS BEBE</button>
+      </div>
+    </div>
+    <div class="imgContainer">
+      <div>
+        <img src="pics/mad2.jfif" alt="...">
+      </div>
+      <div>
+        <button class="redtxt black" type="button" onclick="incorrect1()" id="0">THIS DUDE</button>
+      </div>
+    </div>
+    <div class="imgContainer">
+      <div>
+        <img src="pics/mad3.jfif" alt="...">
+      </div>
+      <div>
+        <button class="redtxt black" type="button" onclick="incorrect2()" id="1">THIS WOMAN</button>
+      </div>
+    </div>
+    <div class="imgContainer">
+      <div>
+        <img src="pics/mad4.jfif" alt="...">
+      </div>
+      <div>
+        <button class="redtxt black" type="button" onclick="incorrect3()" id="2">THIS GUY</button>
+      </div>
+    </div>
+    <div class="imgContainer">
+      <div>
+        <img src="pics/mad5.jfif" alt="...">
+      </div>
+      <div>
+        <button class="redtxt black" type="button" onclick="incorrect4()" id="3">THIS CHILD</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

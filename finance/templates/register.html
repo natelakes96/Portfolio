@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<h3>Register for an account to start trading like a pro!</h3>
+
+<form action="/register" method="post">
+    <input name="username" placeholder="username" type="text" required>
+    <input name="password" placeholder="password" type="password" required>
+    <input name="confirmation" placeholder="confirm password" type="password" required>
+    <button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+{% endblock %}

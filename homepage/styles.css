@@ -1,0 +1,22 @@
+.center {
+    text-align: center;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.box{
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.redtxt{
+    color:red;
+}
+
+.black{
+    background-color: black;
+}
+
